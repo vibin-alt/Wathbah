@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Al Wathbah Auto - German Automotive Design System 
+All colors MUST be HSL for automotive precision.
+*/
+
+@layer base {
+  :root {
+    --background: 210 25% 8%;
+    --foreground: 210 15% 95%;
+
+    --card: 210 20% 12%;
+    --card-foreground: 210 15% 95%;
+
+    --popover: 210 20% 12%;
+    --popover-foreground: 210 15% 95%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 20% 8%;
+    --primary-glow: 217 91% 70%;
+
+    --secondary: 210 15% 20%;
+    --secondary-foreground: 210 15% 95%;
+
+    --muted: 210 15% 16%;
+    --muted-foreground: 210 10% 65%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 210 20% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 15% 95%;
+
+    --border: 210 15% 20%;
+    --input: 210 15% 16%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Automotive gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
+    --gradient-metal: linear-gradient(145deg, hsl(210 15% 25%) 0%, hsl(210 15% 16%) 50%, hsl(210 15% 20%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 25% 8%) 0%, hsl(217 25% 12%) 50%, hsl(210 25% 8%) 100%);
+    
+    /* Automotive shadows */
+    --shadow-automotive: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
+    --shadow-precision: 0 4px 20px -4px hsl(210 15% 8% / 0.5);
+
+    /* Transitions */
+    --transition-precision: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.2s ease-out;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .light {
+    --background: 210 20% 98%;
+    --foreground: 210 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 25% 12%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 20% 98%;
+    --primary-glow: 217 91% 70%;
+
+    --secondary: 210 15% 94%;
+    --secondary-foreground: 210 25% 12%;
+
+    --muted: 210 15% 96%;
+    --muted-foreground: 210 10% 45%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 210 25% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 210 15% 85%;
+    --input: 210 15% 90%;
+    --ring: 217 91% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
